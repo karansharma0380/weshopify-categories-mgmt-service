@@ -7,7 +7,7 @@ spring:
    show-sql: true
  profiles:
     active:
-    - dev
+    - qa
     
 server:
   port: 5052
