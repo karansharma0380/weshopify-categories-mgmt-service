@@ -12,7 +12,14 @@ spring:
 server:
   port: 5052
   
-  
+#Letting our service know where is the service registry
+eureka:
+  client:
+    service-url: 
+      defaultzone: http://localhost:8761/
+    fetch-registry: true
+    register-with-eureka: true
+    
 ---
 #Dev Profile
 spring:
